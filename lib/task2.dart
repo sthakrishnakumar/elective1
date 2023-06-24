@@ -1,3 +1,4 @@
+import 'package:elective1/constants/app_const.dart';
 import 'package:flutter/material.dart';
 
 class Task2 extends StatelessWidget {
@@ -5,6 +6,7 @@ class Task2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final appConst = AppConst();
     return Scaffold(
       backgroundColor: Colors.teal,
       body: Column(
@@ -13,14 +15,17 @@ class Task2 extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 40,
+            backgroundImage: AssetImage(
+              appConst.dash,
+            ),
           ),
-          Text(
+          const Text(
             "Flutter Dash",
             style: TextStyle(fontSize: 16, color: Colors.white),
           ),
           Text(
             "FLUTTER developer".toUpperCase(),
-            style: TextStyle(color: Colors.white, fontSize: 18),
+            style: const TextStyle(color: Colors.white, fontSize: 18),
           ),
           /* Container(
             margin: EdgeInsets.only(top: 10),
@@ -28,14 +33,14 @@ class Task2 extends StatelessWidget {
             width: 100,
             color: Colors.grey,
           ),*/
-          Divider(
+          const Divider(
             color: Colors.grey,
             thickness: 2,
             indent: 155,
             endIndent: 155,
           ),
-          MyContainer(icon: Icons.phone, data: "+977 9876543210"),
-          MyContainer(icon: Icons.email, data: "example@gmail.com"),
+          const MyContainer(icon: Icons.phone, data: "+977 9876543210"),
+          const MyContainer(icon: Icons.email, data: "example@gmail.com"),
         ],
       ),
     );
@@ -51,7 +56,7 @@ class MyContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       color: Colors.white,
       height: 60,
       child: Row(
@@ -68,7 +73,7 @@ class MyContainer extends StatelessWidget {
           ),
           Text(
             data,
-            style: TextStyle(fontSize: 16),
+            style: const TextStyle(fontSize: 16),
           ),
         ],
       ),
