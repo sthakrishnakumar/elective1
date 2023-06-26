@@ -1,8 +1,6 @@
-import 'package:elective1/task1.dart';
-import 'package:elective1/task2.dart';
 import 'package:flutter/material.dart';
 
-import '../main.dart';
+import '../list_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Task2(),
+      home: ListPage(),
     );
   }
 }

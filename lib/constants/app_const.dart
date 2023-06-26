@@ -1,3 +1,3 @@
 class AppConst {
-  String dash = "assets/flutter_dash11.png";
+  String dash = "assets/flutter_dash11.jpg";
 }
